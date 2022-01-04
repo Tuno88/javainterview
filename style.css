@@ -128,9 +128,25 @@ body {
 }
 
 @media screen and (max-width:1000px) {
+    #answerText {
+        padding: 1rem;
+        line-height: 1.5rem;
+        display: block;
+        font-size: 1rem;
+    }
+
+    #exit-icon2 {
+        cursor: pointer;
+        text-align: left;
+    }
+
     .fa-face-laugh-wink {
         font-size: 1.7rem;
-        color: yellow;
+        display: block;
+        text-align: left;
+        padding-left: 5px;
+        margin-top: -10px;
+        cursor: pointer;
     }
 
     .question {
@@ -148,10 +164,10 @@ body {
         box-shadow: 3px 3px 5px 5px rgb(103, 10, 131);
         z-index: 1000;
         background-color: rgba(30, 2, 61);
-        height: 40vh;
+        height: 70vh;
         margin-top: -150px;
-        margin-left: 18%;
-        text-align: center;
+        margin-left: 3rem;
+        text-align: left;
         display: none;
         padding-top: 3rem;
     }
@@ -161,7 +177,7 @@ body {
         /* justify-content: center;
     align-items: center; */
         margin-top: 10%;
-        max-width: 60vw;
+        max-width: 70vw;
         max-height: 80vh;
         background-color: rgba(52, 12, 78, 0.3);
         border-radius: 2rem;
