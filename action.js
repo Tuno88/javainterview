@@ -9,8 +9,14 @@ const exitAnswer2 = document.getElementById('exit-icon2');
 const loader = document.getElementById("loader");
 function getNewQuestion(){
     const question = questions[Math.floor(Math.random()*questions.length)];
+    if(question.questionText.length > 100){
+        questionText.classList.add('long-quote');
+    }else{
+        questionText.classList.remove('long-quote');
+    }
     questionText.textContent = question.questionText;
     answerText.innerHTML = question.answer;
+  
 }
 function getAnswer(){
     answerContainer.style.display = "block";

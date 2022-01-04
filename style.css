@@ -87,6 +87,7 @@ body {
 
 .long-quote {
     font-size: 1.5rem;
+    color: rgb(255, 255, 204);
 }
 
 #answerContainer {
@@ -128,6 +129,10 @@ body {
 }
 
 @media screen and (max-width:1000px) {
+    .long-quote {
+        font-size: 1.1rem;
+    }
+
     #answerText {
         padding: 1rem;
         line-height: 1.5rem;
