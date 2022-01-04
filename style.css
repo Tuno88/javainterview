@@ -99,15 +99,17 @@ body {
     min-height: 40vh;
     margin-top: -250px;
     margin-left: 18%;
-    text-align: center;
+    text-align: left;
     display: none;
-    padding: 1rem;
-
+    padding: 1rem 3rem;
+    overflow: auto;
+    line-height: 1.5rem;
 }
 
 #answerText {
-    padding: 3rem;
+    padding: 1rem;
     line-height: 1.5rem;
+    display: block;
 }
 
 .fa-face-laugh {
@@ -117,6 +119,11 @@ body {
     text-align: left;
     padding-left: 0px;
     margin-top: -5px;
+    cursor: pointer;
+}
+
+#exit-icon2 {
+    cursor: pointer;
 }
 
 @media screen and (max-width:1000px) {
