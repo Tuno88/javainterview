@@ -1,5 +1,5 @@
 const questionContainer = document.getElementById("container");
-const questionText = document.getElementById("question2");
+const questionText = document.getElementById("question");
 const answerButton = document.getElementById("answer_button");
 const newQuestionButton = document.getElementById("next_button");
 const answerText = document.getElementById('answerText');
@@ -31,7 +31,7 @@ function getNewQuestion(){
         questionText.classList.add('long-quote');
     }
     else{
-        questionText.classList.remove('long-quote');
+        // questionText.classList.remove('long-quote');
         questionText.classList.remove('long-long-quote');
         questionText.classList.remove('question-long');
     }
