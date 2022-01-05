@@ -27,6 +27,34 @@ body {
     animation: spin 2s linear infinite;
 }
 
+#toPage {
+    font-size: 1rem;
+    color: rgb(73, 14, 70);
+    position: absolute;
+    left: 5vw;
+    top: 1vh;
+    border: 1px solid rgb(97, 4, 85);
+    height: 2rem;
+    width: 6rem;
+    border-radius: 50%;
+    text-align: center;
+    transform: translate(0, 5%);
+    background-color: rgb(11, 0, 15);
+}
+
+#index {
+    font-size: 2rem;
+    color: grey;
+    position: absolute;
+    left: 90vw;
+    top: 5vh;
+    border: 1px solid grey;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50vw;
+    text-align: center;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
