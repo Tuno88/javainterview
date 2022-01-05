@@ -25,7 +25,7 @@ body {
 
     margin-top: 10%;
     max-width: 60vw;
-    max-height: 40vh;
+    max-height: 60vh;
     background-color: rgba(52, 12, 78, 0.3);
     border-radius: 2rem;
     box-shadow: 0 10px 10px 10px rgba(60, 17, 92, 0.8);
@@ -42,6 +42,14 @@ body {
     margin: auto;
     text-align: center;
     padding: 1vh 5vw;
+}
+
+.question-long {
+    display: block;
+    /* font-size: 2rem; */
+    /* margin: auto; */
+    /* text-align: center; */
+    margin-left: 10%;
 }
 
 .fa-face-laugh-wink {
@@ -88,6 +96,14 @@ body {
 .long-quote {
     font-size: 1.5rem;
     color: rgb(255, 255, 204);
+}
+
+.long-long-quote {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    color: rgb(240, 140, 240);
+    text-align: left;
+    margin-left: 14rem;
 }
 
 #answerContainer {

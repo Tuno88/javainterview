@@ -9,12 +9,19 @@ const exitAnswer2 = document.getElementById('exit-icon2');
 const loader = document.getElementById("loader");
 function getNewQuestion(){
     const question = questions[Math.floor(Math.random()*questions.length)];
-    if(question.questionText.length > 100){
+    if(question.questionText.length > 200){
+        questionText.classList.add('long-long-quote');
+        questionText.classList.add('question-long');
+    }else if(question.questionText.length > 100){
+
         questionText.classList.add('long-quote');
-    }else{
-        questionText.classList.remove('long-quote');
     }
-    questionText.textContent = question.questionText;
+    else{
+        questionText.classList.remove('long-quote');
+        questionText.classList.remove('long-long-quote');
+        questionText.classList.remove('question-long');
+    }
+    questionText.innerHTML = question.questionText;
     answerText.innerHTML = question.answer;
   
 }
