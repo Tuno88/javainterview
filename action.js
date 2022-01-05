@@ -7,7 +7,18 @@ const answerContainer = document.getElementById('answerContainer');
 const exitAnswer = document.getElementById('exit-icon');
 const exitAnswer2 = document.getElementById('exit-icon2');
 const loader = document.getElementById("loader");
+//Show Loading
+function loading(){
+    loader.hidden = false;
+    questionContainer.hidden = true;
+}
+//Hide Loading
+function complete(){
+    questionContainer.hidden = false;
+    loader.hidden = true;
+}
 function getNewQuestion(){
+    loading();
     const question = questions[Math.floor(Math.random()*questions.length)];
     if(question.questionText.length > 200){
         questionText.classList.add('long-long-quote');
@@ -23,7 +34,7 @@ function getNewQuestion(){
     }
     questionText.innerHTML = question.questionText;
     answerText.innerHTML = question.answer;
-  
+    complete();
 }
 function getAnswer(){
     answerContainer.style.display = "block";
@@ -31,6 +42,7 @@ function getAnswer(){
 function exitAnswerContainer(){
     answerContainer.style.display = "none";
 }
+
 getNewQuestion();
 newQuestionButton.addEventListener('click',getNewQuestion);
 answerButton.addEventListener('click',getAnswer);
