@@ -20,7 +20,7 @@ function complete(){
     loader.hidden = true;
 }
 function getNewQuestion(){
-    // loading();
+    loading();
         var question = questions[i];
         index.innerHTML = i+1; 
     if(question.questionText.length > 200){
@@ -31,13 +31,13 @@ function getNewQuestion(){
         questionText.classList.add('long-quote');
     }
     else{
-        // questionText.classList.remove('long-quote');
+        questionText.classList.remove('long-quote');
         questionText.classList.remove('long-long-quote');
         questionText.classList.remove('question-long');
     }
     questionText.innerHTML = question.questionText;
     answerText.innerHTML = question.answer;
-    // complete();
+    complete();
     i++;
 }
 function getAnswer(){
