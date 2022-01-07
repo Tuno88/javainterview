@@ -20,7 +20,7 @@ function complete(){
     loader.hidden = true;
 }
 function getNewQuestion(){
-    loading();
+    // loading();
         var question = questions[i];
         index.innerHTML = i+1; 
     if(question.questionText.length > 200){
@@ -37,7 +37,7 @@ function getNewQuestion(){
     }
     questionText.innerHTML = question.questionText;
     answerText.innerHTML = question.answer;
-    complete();
+    // complete();
     i++;
 }
 function getAnswer(){
